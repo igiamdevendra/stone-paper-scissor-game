@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main">
+        <div class="card">
+            <div class="card-top">
+                <img src="/images/rock.png" alt="" class="leftHand">
+                <img src="/images/rock.png" alt="" class="rightHand">
+            </div>
+            <h2 id="resultText">Choose to Play</h2>
+            <div class="card-bottom">
+                <img onclick="checkResult(event)" name src="images/rock.png" alt="rock">
+                <img onclick="checkResult(event)" src="images/paper.png" alt="paper">
+                <img onclick="checkResult(event)" src="images/scissor.png" alt="scissor">
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

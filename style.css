@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: red;
+    width: 700px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card-top img{
+    width: 40%;
+}
+
+.card-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightHand{
+    transform: scaleX(-100%);
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card-bottom{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-bottom img{
+    cursor: pointer;
+    width: 20%;
+    rotate: -90deg;
+    transform: scaleY(-1);
+}
+
+.card-bottom img:hover{
+    scale: 105%;
+}
+
+.leftHand{
+    margin-left: -5px;
+}
+
+.left-hand-animation{
+    animation: computerImg 1s linear infinite;
+}
+
+@keyframes computerImg {
+    0% {
+        rotate: 0;
+    }
+    50% {
+        rotate: 10deg;
+    }
+    100% {
+        rotate: 0;
+    }
+    
+}
+
+.rightHand{
+    margin-right: -5px;
+}
+
+.right-hand-animation{
+    animation: userImg 1s linear infinite;
+}
+
+@keyframes userImg {
+    0% {
+        rotate: 0;
+    }
+    50% {
+        rotate: -10deg;
+    }
+    100% {
+        rotate: 0;
+    }
+}
+
